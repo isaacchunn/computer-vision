@@ -1,0 +1,17 @@
+name: computer-vision
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - matplotlib
+  - opencv
+  - scipy
+  - scikit-image
+  - pillow
+  - jupyter
+  - ipykernel
+  - pandas
+  - seaborn
+  - tqdm
