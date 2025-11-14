@@ -1,6 +1,6 @@
 # computer-vision
 
-A collection of computer vision lab assignments and experiments covering fundamental image processing techniques, spatial and frequency domain operations, and imaging geometry concepts.
+A collection of computer vision lab assignments and experiments covering fundamental image processing techniques, spatial and frequency domain operations, image binarization methods, stereo vision, and imaging geometry concepts. Includes both Python Jupyter notebooks and MATLAB implementations.
 
 
 ## 🚀 Quick Start
@@ -9,6 +9,7 @@ A collection of computer vision lab assignments and experiments covering fundame
 
 - Python 3.11 or higher
 - Conda or Miniconda installed
+- MATLAB (for Lab 2 assignments)
 
 ### Environment Setup
 
@@ -63,8 +64,29 @@ The project uses the following key libraries:
 - `lab1/corner.m` - MATLAB script for corner detection (reference)
 - `lab1/Lab1 Manual.pdf` - Detailed assignment instructions
 
-### Lab 2: Advanced Computer Vision Techniques
-*[Lab 2 content will be added as it becomes available]*
+### Lab 2: Image Binarization and Stereo Vision
+**Topics Covered:**
+- **Image Thresholding Techniques**
+  - Otsu's global thresholding method
+  - Niblack's adaptive/local thresholding
+  - Grid search parameter optimization
+  - Bayesian parameter optimization
+- **Performance Evaluation**
+  - F-measure calculation
+  - Precision and recall metrics
+  - Ground truth comparison
+- **Stereo Vision**
+  - Disparity map computation
+  - SSD (Sum of Squared Differences) matching
+  - 3D depth estimation from stereo pairs
+
+**Files:**
+- `lab2/otsu_thresholding.m` - Otsu's global thresholding implementation
+- `lab2/niblack_local_thresholding.m` - Niblack's method with grid search optimization
+- `lab2/niblack_bayesian.m` - Niblack's method with Bayesian optimization
+- `lab2/stereo_vision.m` - Stereo vision and disparity map computation
+- `lab2/assets/` - Document images, ground truths, and stereo image pairs
+- `lab2/docs/` - Lab manuals and assignment instructions
 
 ## 🛠️ Project Structure
 
@@ -78,8 +100,15 @@ computer-vision/
 ├── lab1/                   # Laboratory 1 files
 │   ├── lab1.ipynb         # Main notebook
 │   ├── corner.m           # MATLAB reference
-│   └── Lab1 Manual.pdf    # Instructions
-├── lab2/                   # Laboratory 2 files (TBD)
+│   ├── docs/              # Lab documentation
+│   └── assets/            # Lab 1 specific images
+├── lab2/                   # Laboratory 2 files
+│   ├── otsu_thresholding.m           # Otsu's method
+│   ├── niblack_local_thresholding.m  # Niblack with grid search
+│   ├── niblack_bayesian.m            # Niblack with Bayesian opt
+│   ├── stereo_vision.m               # Stereo vision implementation
+│   ├── assets/                        # Document images and stereo pairs
+│   └── docs/                          # Lab manuals
 ├── environment.yml         # Conda environment specification
 ├── LICENSE                 # MIT License
 └── README.md              # This file
